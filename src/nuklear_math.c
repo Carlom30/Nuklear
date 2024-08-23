@@ -34,8 +34,7 @@
 ///  (it can actually approximate a lot more functions) can be
 ///  found here: www.lolengine.net/wiki/oss/lolremez
 */
-#ifndef NK_INV_SQRT
-#define NK_INV_SQRT nk_inv_sqrt
+#ifdef NK_INV_SQRT_LIB_IMPL
 NK_LIB float
 nk_inv_sqrt(float n)
 {
@@ -49,8 +48,7 @@ nk_inv_sqrt(float n)
     return conv.f;
 }
 #endif
-#ifndef NK_SIN
-#define NK_SIN nk_sin
+#ifdef NK_SIN_LIB_IMPL
 NK_LIB float
 nk_sin(float x)
 {
@@ -65,8 +63,7 @@ nk_sin(float x)
     return a0 + x*(a1 + x*(a2 + x*(a3 + x*(a4 + x*(a5 + x*(a6 + x*a7))))));
 }
 #endif
-#ifndef NK_COS
-#define NK_COS nk_cos
+#ifdef NK_COS_LIB_IMPL
 NK_LIB float
 nk_cos(float x)
 {
