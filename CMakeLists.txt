@@ -6,6 +6,21 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug)
 endif()
 
+# Read Nuklear documentation for flags description
+option(NK_INCLUDE_FIXED_TYPES "" OFF)
+option(NK_INCLUDE_DEFAULT_ALLOCATOR "" OFF)
+option(NK_INCLUDE_STANDARD_VARARGS "" OFF)
+option(NK_INCLUDE_STANDARD_BOOL "" OFF)
+option(NK_INCLUDE_VERTEX_BUFFER_OUTPUT "" OFF)
+option(NK_INCLUDE_FONT_BAKING "" OFF)
+option(NK_INCLUDE_DEFAULT_FONT "" OFF)
+option(NK_INCLUDE_COMMAND_USERDATA "" OFF)
+option(NK_UINT_DRAW_INDEX "" OFF)
+option(NK_INCLUDE_STANDARD_IO "" OFF)
+option(NK_BUTTON_TRIGGER_ON_RELEASE "" OFF)
+option(NK_ZERO_COMMAND_MEMORY "" OFF)
+option(NK_KEYSTATE_BASED_INPUT "" OFF)
+
 add_library(Nuklear
   STATIC
     src/nuklear_9slice.c
